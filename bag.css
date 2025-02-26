@@ -1,0 +1,260 @@
+@font-face {
+  font-family: 'Moglan';
+  src: url('Moglan.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Moglan', sans-serif;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffddd2;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1.logo {
+  font-size: 3rem;
+  color: #010101;
+  margin-top: 40px;
+  font-weight: bold;
+  left: 50%;
+
+}
+
+.nickname {
+  font-size: 1rem;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  margin-top: -20px;
+  margin-left: 15px;
+  letter-spacing: 5px;
+}
+
+.logo {
+  animation: fadeIn 1s ease-out;
+  font-size: 45px;
+  margin-top: 60px;
+}
+
+.my-bag {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-bag h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart-item .item-details {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.cart-item .item-details h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.cart-item .item-details p {
+  margin: 5px 0;
+  color: #777;
+}
+
+.cart-item .item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-item .item-actions button {
+  background-color: #ffddd2;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-item .item-actions button:hover {
+  background-color: #ffb3b3;
+}
+
+.total-price {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 15px;
+  background-color: #ffddd2;
+  border-radius: 8px;
+}
+
+.checkout-btn {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 120px;
+  transition: width 0.5s;
+  z-index: 9999;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.open-btn {
+  position: absolute;
+  margin-top: 30px;
+  top: 36px;
+  right: 20px;
+  font-size: 25px;
+  padding: 10px;
+  background-color: #111;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10000; 
+  animation: fadeIn 1s ease-out;
+}
+.open-btn:hover {
+  background-color: #444;
+}
+
+body.sidebar-open {
+  margin-right: 250px;
+  transition: margin-right 0.5s;
+}
+
+.checkout-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 800px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+
+.popup-content h3 {
+  text-align: center;
+}
+
+.popup-total {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.popup-total p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.popup-content button {
+  background-color: #ffddd2;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.popup-content button:hover {
+  background-color: #ffb3b3;
+}
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding: 0 10px; 
+  }
+}

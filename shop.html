@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Glamoura</title>
+  <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="logo ">Glamoura</h1>
+    <h3 class="nickname">L u x e  G l a m o u r</h2>
+
+  </header>
+  <button class="open-btn" onclick="toggleSidebar()" aria-expanded="false">☰</button>
+  <div id="sidebar" class="sidebar">
+    <a href="glamoura.html#home">Home</a>
+    <a href="shop.html">MakeUp</a>
+    <a href="glamoura.html#products-img">Products</a>
+    <a href="glamoura.html#about">Contact</a>
+    <a href="Bag.html" id="cart-display">My Bag</a>
+    <a href="signup.html">Sign up</a>
+  </div>
+  <section class="products ">
+    <div class="product-grid">
+      <div class="product hidden">
+        <img src="h1.jpg" alt="Brown Lipstick">
+        <h3>Brown Lipstick: Café Delight</h3>
+        <p class="price">$10</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <button onclick="addToCart('Brown Lipstick', 10,'h1.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="h2.jpg" alt="Red Lipstick">
+        <h3>Red Lipstick: Ruby Elegance</h3>
+        <p class="price">$12</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('Red Lipstick', 12,'h2.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="ff2.jpg" alt="Foundation">
+        <h3>Foundation: Perfect Harmony</h3>
+        <p class="price">$20</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('Foundation', 20,'ff2.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="h3.jpg" alt="Lipsticks Collection">
+        <h3>Lipsticks Collection</h3>
+        <p class="price">$30</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('Lipsticks Collection', 30,'h3.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="m1.jpg" alt="Mascara">
+        <h3>Mascara: Velvet Lashes</h3>
+        <p class="price">$7</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('Mascara', 7,'m1.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="h4.jpg" alt="Lipsticks Collection">
+        <h3>Lipsticks Collection</h3>
+        <p class="price">$23</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('Lipsticks Collection', 23,'h4.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="p8.jpg" alt="Foundation">
+        <h3>Foundation: Perfect Harmony</h3>
+        <p class="price">$20</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('Foundation', 20,'p8.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="h5.jpg" alt="Brown Lipstick">
+        <h3>Brown Lipstick: Café Delight</h3>
+        <p class="price">$9</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('Brown Lipstick', 10,'h5.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="p7.jpg" alt="Mascara">
+        <h3>Mascara: Lush Lash </h3>
+        <p class="price">$6</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('Mascara', 7,'p7.jpg')">Add to Cart</button>
+      </div>
+
+      <div class="product hidden">
+        <img src="b1.jpg" alt="set">
+        <h3>Perfect Brows & Lashes Bundle</h3>
+        <p class="price">$35</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('set', 35,'b1.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="b2.jpg" alt="set">
+        <h3>Glow & Sculpt Set</h3>
+        <p class="price">$27</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('set', 27,'b2.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="b3.jpg" alt="set">
+        <h3>Soft Touch Bundle</h3>
+        <p class="price">$13</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('set', 13,'b3.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="i1.jpg" alt="Eyeshadow">
+        <h3>Eyeshadow: Sapphire Mist</h3>
+        <p class="price">$18</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('Eyeshadow', 18,'i1.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="i2.jpg" alt="Eyeshadow">
+        <h3>Moonlit Sapphire</h3>
+        <p class="price">$14</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('Eyeshadow', 14,'i2.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="i3.jpg" alt="Blusher">
+        <h3>Blusher: Rosy Glow</h3>
+        <p class="price">$14</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('Blusher', 14,'i3.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="p4.jpg" alt="Blusher">
+        <h3>Blusher: Soft Rose</h3>
+        <p class="price">$9</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('Blusher', 9,'p4.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="i4.jpg" alt="Highlighter">
+        <h3>Highlighter: Soft Radiance</h3>
+        <p class="price">$11</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div> 
+        <button onclick="addToCart('Highlighter', 11,'i4.jpg')">Add to Cart</button>
+      </div>
+      <div class="product hidden">
+        <img src="f1.jpg" alt="Brush">
+        <h3>Glamora Brush Collection </h3>
+        <p class="price">$16</p>
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <button onclick="addToCart('Brush', 16,'f1.jpg')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <script src="shop.js"></script>
+</body>
+
+</html>

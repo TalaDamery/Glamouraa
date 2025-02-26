@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bag | Glamoura</title>
+  <link rel="stylesheet" href="bag.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">Glamoura</h1>
+    <h3 class="nickname">L u x e  G l a m o u r</h2>
+  </header>
+  <button class="open-btn" onclick="toggleSidebar()" aria-expanded="false">☰</button>
+  <div id="sidebar" class="sidebar">
+    <a href="glamoura.html#home">Home</a>
+    <a href="shop.html">MakeUp</a>
+    <a href="glamoura.html#products-img">Products</a>
+    <a href="glamoura.html#about">Contact</a>
+    <a href="Bag.html" id="cart-display">My Bag</a>
+    <a href="login.html">Sign up</a>
+  </div>
+  <section class="my-bag">
+    <h2>Your Shopping Bag</h2>
+
+    <div id="cart-items" class="cart-items">
+    </div>
+
+    <div class="total-price">
+      <p>Total: $<span id="total-amount">0</span></p>
+      <button class="checkout-btn" onclick="openCheckoutPopup()">Checkout</button>
+    </div>
+    <div id="checkout-popup" class="checkout-popup">
+      <div class="popup-content">
+        <h3>Your Cart</h3>
+        <div id="popup-items"></div>
+        <div class="popup-total">
+          <p>Total: $<span id="popup-total-amount">0</span></p>
+        </div>
+        <button onclick="closeCheckoutPopup()">Close</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="shop.js"></script>
+</body>
+
+</html>
