@@ -5,18 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glamoura</title>
-  <link rel="stylesheet" href="glamoura.css">
+  <link rel="stylesheet" href="css/glamoura.css">
 </head>
 
 <body>
   <header>
     <div class="search-container">
-        <button class="search-icon" onclick="toggleSearch()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAolJREFUSEvllkmojXEYxn9XxpRYUKaVuIaQKZljI2VhZYoSQmSBhdhZmS0sSMRSpsSChSRFZiFRZLhk3pBCkrxP3u/27zvnu9/bdU534b85p3Pe53n+3zs9XwNtdBraSJeIcHtgAjAY6AE8AW4Cb//l0i0J9wU2A4uAblVErgO7gZOtuUCR8ELgENAlQHoemAd8DcQ2h1QTXuaiCvoNHAXOAveA9/Z9NDAJWAn0d6bbwFTge1Q8LzwSuAu0Az4Cs4FbBWSdgcPAAv9/v2FWt1b4HDDLwVOAKyVEajzFjAd+WXYagecR8fSJewEfHHTQunZFhAAY5VlSuJpxawSXCs/3ego3EbgWIfCYh8Aw4BIwI4JLhdf7eAjXFfgWIfAYTYCa8h3QJ4JLhTcC2xzUydL2M0LgMcIJ/wXoHsGlwkuAIw4aBDyNEHjMMWCul0dlKj2p8AjgviPWAPtK0X8DOnhTap0esFlfFcHl5/i1LY9+Vi996ql/BEg2ALs8LtyUeeG1wF4nUdqXlgiPAa7aCKknTni6A3elwp06+kIY5+gz1jDrgBc5Ngktt12+3SdAy2Mg8DKkSqWwcD2Bi8DwhERz+sBrORbQxbQydbSfVedTxrfFDONxRLzIneRKe/yptBaLji602JxJdZZ96shUNgFNLV2g7EVA7iPCmd5s8mW9CFwAjgN3nHyI1fdRIqSXBLnVsyLxMuFI1rKY02adcxKALjjNrbSCp5bCGj85lXokOxrLyTYdr/LKtRQWt0ojoxiQCCnd0303NP9ca+FM/IZtsd6J+Bu3z0/Zb/UQFrdmWoslS7s8Wl5d1yfOyIdaii/bgtkJ7Kh3jfP8ssjP1UajXqkuHcP/T/gP7KtmH4DlTJUAAAAASUVORK5CYII="/></button>
-        <input type="text" id="searchInput" class="search-input" placeholder="search..." />
+      <button class="search-icon" onclick="toggleSearch()"><img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAolJREFUSEvllkmojXEYxn9XxpRYUKaVuIaQKZljI2VhZYoSQmSBhdhZmS0sSMRSpsSChSRFZiFRZLhk3pBCkrxP3u/27zvnu9/bdU534b85p3Pe53n+3zs9XwNtdBraSJeIcHtgAjAY6AE8AW4Cb//l0i0J9wU2A4uAblVErgO7gZOtuUCR8ELgENAlQHoemAd8DcQ2h1QTXuaiCvoNHAXOAveA9/Z9NDAJWAn0d6bbwFTge1Q8LzwSuAu0Az4Cs4FbBWSdgcPAAv9/v2FWt1b4HDDLwVOAKyVEajzFjAd+WXYagecR8fSJewEfHHTQunZFhAAY5VlSuJpxawSXCs/3ego3EbgWIfCYh8Aw4BIwI4JLhdf7eAjXFfgWIfAYTYCa8h3QJ4JLhTcC2xzUydL2M0LgMcIJ/wXoHsGlwkuAIw4aBDyNEHjMMWCul0dlKj2p8AjgviPWAPtK0X8DOnhTap0esFlfFcHl5/i1LY9+Vi996ql/BEg2ALs8LtyUeeG1wF4nUdqXlgiPAa7aCKknTni6A3elwp06+kIY5+gz1jDrgBc5Ngktt12+3SdAy2Mg8DKkSqWwcD2Bi8DwhERz+sBrORbQxbQydbSfVedTxrfFDONxRLzIneRKe/yptBaLji602JxJdZZ96shUNgFNLV2g7EVA7iPCmd5s8mW9CFwAjgN3nHyI1fdRIqSXBLnVsyLxMuFI1rKY02adcxKALjjNrbSCp5bCGj85lXokOxrLyTYdr/LKtRQWt0ojoxiQCCnd0303NP9ca+FM/IZtsd6J+Bu3z0/Zb/UQFrdmWoslS7s8Wl5d1yfOyIdaii/bgtkJ7Kh3jfP8ssjP1UajXqkuHcP/T/gP7KtmH4DlTJUAAAAASUVORK5CYII=" /></button>
+      <input type="text" id="searchInput" class="search-input" placeholder="search..." />
     </div>
     <h1 class="logo">Glamoura</h1>
-    <h3 class="nickname">L u x e  G l a m o u r</h2>
-</header>
+    <h3 class="nickname">L u x e G l a m o u r</h2>
+  </header>
 
   <button class="open-btn" onclick="toggleSidebar()">☰</button>
   <div id="sidebar" class="sidebar">
@@ -40,9 +41,9 @@
   </section>
 
   <section id="products-img" class="img-c hidden">
-    <img class="p5" src="p5.jpg">
-    <img class="p3" src="p3.jpg">
-    <img class="p6" src="p6.jpg">
+    <img class="p5" src="img/p5.jpg">
+    <img class="p3" src="img/p3.jpg">
+    <img class="p6" src="img/p6.jpg">
   </section>
 
   <section class="marquee-container hidden">
@@ -66,9 +67,9 @@
   </section>
 
   <section id="products-img" class="img-c hidden">
-    <img src="p4.jpg">
-    <img src="p7.jpg">
-    <img src="p8.jpg">
+    <img src="img/p4.jpg">
+    <img src="img/p7.jpg">
+    <img src="img/p8.jpg">
   </section>
 
   <section id="about" class="about">
@@ -101,8 +102,8 @@
       <p>Subscribe to our newsletter:</p>
       <input type="email" id="emailInput" placeholder="Enter your email" required>
       <button type="submit" onclick="subscribe()">Subscribe</button>
-  </div>
-  
+    </div>
+
 
 
   </section>
@@ -112,7 +113,7 @@
     <p>&copy; 2025 Glamoura. All rights reserved.</p>
   </footer>
 
-  <script src="glamora.js"></script>
+  <script src="js/glamora.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Moglan';
-  src: url('Moglan.ttf') format('truetype');
+  src: url('../Moglan.ttf') format('truetype');
 }
 
 body {
@@ -244,10 +244,13 @@ body.sidebar-open {
   background-color: #ffb3b3;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px; 
+  }
+  header {
+    margin: -20px;
   }
 }
 
